@@ -6,8 +6,8 @@ import { getFirestore, collection, addDoc, deleteDoc, doc, updateDoc, onSnapshot
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCS4af3B-SIO688y6d4_I_GloocAb8ob-Q",
-  authDomain: "todo-list-a8b81.firebaseapp.com",
+  apiKey: `${process.env.TODO_LIST_API_KEY}`,
+  authDomain: `${process.env.TODO_LIST_AUTH_DOMAIN}`,
   projectId: "todo-list-a8b81",
   storageBucket: "todo-list-a8b81.appspot.com",
   messagingSenderId: "722468287684",
